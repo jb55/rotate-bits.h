@@ -1,6 +1,6 @@
 
 #include <assert.h>
-#include "rotate.h"
+#include "rotate-bits.h"
 #include "tap.c/tap.h"
 
 int main (void) {
