@@ -17,7 +17,7 @@ int main (void) {
   ok(ROTR16(1, 1) == 0x8000, "ROTR16 lowest bit by 1 wraps to highest bit");
 
   ok(ROTL32(10, 1) == 20, "ROTL32 left once multiplies by 2");
-  ok(ROTL32(0x80000000, 1) == 1, "ROTL32 highest bit by 1 wraps to 1");
+  ok(ROTL32((1 << 31), 1) == 1, "ROTL32 highest bit by 1 wraps to 1");
   ok(ROTL32(0xFFFFFFFF, 1) == 0xFFFFFFFF, "ROTL32 all bits is identity");
   ok(ROTR32(1, 1) == 0x80000000, "ROTR32 lowest bit by 1 wraps to highest bit");
 

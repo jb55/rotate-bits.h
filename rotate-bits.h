@@ -23,11 +23,11 @@
 #else
 
 #define ROTL32(v, n) \
-  (U32V((v) << (n)) | ((v) >> (32 - (n))))
+  (U32V((unsigned long)(v) << (n)) | ((unsigned long)(v) >> (32 - (n))))
 
 // tests fail if we don't have this cast...
 #define ROTL64(v, n) \
-  (U64V((unsigned long long)(v) << (n)) | ((v) >> (64 - (n))))
+  (U64V((unsigned long long)(v) << (n)) | ((unsigned long long)(v) >> (64 - (n))))
 
 #define ROTR32(v, n) ROTL32(v, 32 - (n))
 #define ROTR64(v, n) ROTL64(v, 64 - (n))

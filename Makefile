@@ -8,7 +8,7 @@ OBJS = $(DEPS:.c=.o)
 	$(CC) $< -Ideps -c -o $@ $(CFLAGS)
 
 test: $(OBJS)
-	$(CC) -Ideps $(OBJS) -Wall test.c -o test
+	$(CC) -Ideps $(OBJS) -Wall -Werror test.c -o test
 	./test
 
 clean:
