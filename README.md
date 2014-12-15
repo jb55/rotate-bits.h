@@ -1,6 +1,8 @@
 
 # rotate-bits.h
 
+  [![Build Status](https://travis-ci.org/jb55/rotate-bits.h.svg)](https://travis-ci.org/jb55/rotate-bits.h)
+
   ROT{L,R}{8,16,32,64} macros
 
 ## Installation
